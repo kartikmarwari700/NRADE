@@ -1,0 +1,6 @@
+# build results and program output
+nrade
+test_nrade
+*.exe
+output/
+*.log

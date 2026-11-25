@@ -1,0 +1,3 @@
+# Linux tools (sh, make) need LF; the Windows batch file needs CRLF.
+* text=auto eol=lf
+*.bat text eol=crlf

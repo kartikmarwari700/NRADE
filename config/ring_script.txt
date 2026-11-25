@@ -1,0 +1,18 @@
+# Live demo (use with config/single_cycle.txt).
+# Every node takes its first link, waits, then asks for the next one.
+# detection mode -> deadlock, then recovery
+# avoidance mode -> Banker delays one node, so no deadlock happens
+N1 request 1 0 0
+N1 sleep 50
+N1 request 0 1 0
+N1 sleep 10
+
+N2 request 0 1 0
+N2 sleep 50
+N2 request 0 0 1
+N2 sleep 10
+
+N3 request 0 0 1
+N3 sleep 50
+N3 request 1 0 0
+N3 sleep 10

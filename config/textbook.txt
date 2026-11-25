@@ -1,0 +1,23 @@
+# TC1 - TC4: textbook Banker example (5 nodes, 3 resource types)
+# Total = (10 5 7), Available = (3 3 2)
+resource linkbw LINK_BW 10
+resource buffer BUFFER  5
+resource port   PORT    7
+
+node N0 3
+node N1 2
+node N2 4
+node N3 1
+node N4 2
+
+max N0 7 5 3
+max N1 3 2 2
+max N2 9 0 2
+max N3 2 2 2
+max N4 4 3 3
+
+alloc N0 0 1 0
+alloc N1 2 0 0
+alloc N2 3 0 2
+alloc N3 2 1 1
+alloc N4 0 0 2
